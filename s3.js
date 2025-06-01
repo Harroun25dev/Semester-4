@@ -37,7 +37,7 @@ function calcu() {
     
 
 
-    var tqm1tt = document.getElementById('tqm1tt').value = Number((tqm1ctrl*0.1));
+    var tqm1tt = document.getElementById('tqm1tt').value = Number((tqm1ctrl*1));
   
     
   
