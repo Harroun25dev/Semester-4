@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+
+  <head>
+
+     <link rel="shortcut icon" type="x-icon" href="logo2.png">
+
+    <meta charset="utf-8">
+
+    <title>Semester 4 GP</title>
+
+    <!-- CSS only -->
+
+    <script src="jquery.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<!-- JavaScript Bundle with Popper -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="bootstrap.js"></script>
+
+<script language="JavaScript" type="text/javascript" src="s3.js"></script>
+
+  </head>
+
+  <body>
+	
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+ <img  src="logo2.png" height="40" width="40" >
+   
+
+ <a style=" border-radius: 15px;" href=""><b>S4</b></a>
+
+ <a style=" border-radius: 15px;" href="https://www.instagram.com/takieddinge70?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><b>taki instagram</b></a>
+      
+  </nav>
+
+
+
+
+
+
+
+
+                    <table class="table table-dark  table-borderless mb-0 table-responsive" class="thegrid"  >
+
+                      <thead>
+
+                        <tr>
+
+                          <th scope="col">la matiere</th>
+
+                          <th scope="col">Note td</th>
+                      
+
+                          <th scope="col">Controle</th>
+
+                          <th scope="col">Note TP</th>
+
+                        
+
+                            <th scope="col">la moyenne</th>
+
+                        </tr>
+
+                      </thead>
+
+                      <tbody>
+
+                        <tr>
+
+                          <th scope="row">Transfert de chaleur</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="tch1ntd" >
+
+                        </td>
+
+                  
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="tch1ctrl">
+
+                        </td>
+
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total  " onkeyup="calcu()" id="tch1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Transfert de matière</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="tdm1ntd" >
+
+                        </td>
+
+                   
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="tdm1ctrl">
+
+                        </td>
+                        
+                        <td>
+
+
+                       </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total " onkeyup="calcu()" id="tdm1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+          
+
+                          <th scope="row">Transfert de quantité de mouvement</th>
+
+                          <td>
+
+                          </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="tqm1ctrl">
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="tqm1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Cinétique chimique et catalyse homogène</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="cin1ntd" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="cin1ctrl">
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()"  id="cin1ntp">
+
+                        </td>
+
+
+ 
+
+                  
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="cin1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Thermodynamique chimique</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="ther1ntd" >
+
+                        </td>
+
+                    
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()"  id="ther1ctrl">
+
+                        </td>
+                        <td></td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total " onkeyup="calcu()" id="ther1tt">
+
+                        </td>
+
+                        </tr>
+    
+                       <tr>
+
+                          <th scope="row">Chimie minérale industrielle</th>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="min1ntd"> 
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="min1ctrl"> 
+
+                        </td>
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="min1ntp"> 
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="min1tt">
+
+                        </td>
+
+                        </tr>
+
+                        <tr>
+
+                          <th scope="row">Méthodes numériques</th>
+
+                        <td>
+
+                          
+
+                        </td>
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="info1ctrl" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="info1ntp">
+
+                        </td>
+
+                        <td>
+
+                           <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="info1tt">
+
+                        </td>
+
+                        </tr>
+
+                          <th  scope="row">Dessin assisté par ordinateur</th>
+                          <td></td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="diss1ctrl" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note TP /20" onkeyup="calcu()" id="diss1ntp" >
+
+                        </td>
+
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="diss1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        <th  scope="row">Introduction au raffinage et à la pétrochimie</th>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="pétr1ctrl" >
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="pétr1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        <th  scope="row">Techniques d’information
+                          d’expression et de communication</th>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note td /20" onkeyup="calcu()" id="com1ntd" >
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="Note controle /20" onkeyup="calcu()" id="com1ctrl" >
+
+                        </td>
+                        <td>
+
+                        </td>
+
+                        <td>
+
+                          <input type="number" class="form-control" placeholder="total" onkeyup="calcu()" id="com1tt" >
+
+                        </td>
+
+                        </tr>
+
+                        
+
+                        <tr>
+
+                          <th  scope="row">total</th>
+
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td>
+
+                           
+
+                        </td>
+
+                        <td style="background-color:#1dbf97; border-radius: 5px; " >
+
+                          <b style="text-color:blue;">la Moyenne générale:</b>
+
+                          <span type="number"  id="tt"></span>
+
+                        </td>
+                        <td><p><b>اللهم صل وسلم وزد وبارك على نبينا وحبيبنا محمد عليه الصلاة والسلام</b></p></td>
+                        </tr>
+
+                      </tbody>
+
+                    </table>
+
+<footer class="bg-dark text-center text-lg-start">
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);color:#1dbf97;">
+    by: beskri taki.dev
+  </div>
+ 
+</footer>
+
+
+
+<style>
+a:link, a:visited {
+  background-color: #f8f9fa;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: ;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #1dbf97;
+  color:white;
+}
+.mynav{
+padding: 10px;
+border-color: #f8f9fa;
+margin: auto;
+}
+.WebContainer{
+
+    width:100%;
+
+    min-width:1000px;
+
+    height:auto;
+
+}
+
+@media
+
+only screen and (max-width: 760px),
+
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+
+
+	/* Force table to not be like tables anymore */
+
+	table, thead, tbody, th, td, tr {
+
+		display: block;
+
+	}
+
+
+
+	/* Hide table headers (but not display:  ;, for accessibility) */
+
+	thead tr {
+
+		position: absolute;
+
+		top: -9999px;
+
+		left: -9999px;
+
+	}
+
+
+
+	tr { border: 1px solid #ccc; }
+
+
+
+	td {
+
+		/* Behave  like a "row" */
+
+		border-color: inherit ;
+
+		border-bottom: 1px solid #eee;
+
+		position: relative;
+
+		padding-left: 50%;
+
+    width:80%;
+
+    margin: auto;
+ 
+    align-self: center;
+
+
+
+	}
+
+
+
+	td:before {
+
+		/* Now like a table header */
+
+		position: absolute;
+
+		/* Top/left values mimic padding */
+
+		top: 6px;
+
+		left: 6px;
+
+		width: 45%;
+
+		padding-right: 10px;
+
+		white-space: nowrap;
+
+	}
+
+
+
+
+
+html, body
+
+    {
+
+      -ms-content-zooming: ;
+
+      touch-action: ;
+
+      content-zooming:  ;
+
+       // hide vertical
+
+    overflow-x: hidden;
+
+  // hide vertical
+
+    overflow-x:  ;
+
+    }rflow-style:  ;
+
+
+
+
+
+  }
+
+
+
+}
+
+</style>
+</body>
+
+
+
+</html>
