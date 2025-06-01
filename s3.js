@@ -110,7 +110,7 @@ function calcu() {
         var pétr1ctrl = Number(document.getElementById('pétr1ctrl').value);
 
 
-        var pétr1tt = document.getElementById('pétr1tt').value = Number(((pétr1ctrl*6))/10);
+        var pétr1tt = document.getElementById('pétr1tt').value = Number(((pétr1ctrl*1)));
 
 
 
